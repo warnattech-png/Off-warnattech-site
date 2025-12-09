@@ -1,76 +1,198 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WarNat Tech - Serviços profissionais de CFTV, redes, servidores Windows, suporte técnico e montagem de PCs em Belo Horizonte e região.">
-    <title>WarNat Tech - Segurança, Redes e TI Profissional</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTech Segurança & TI | CFTV, Redes, Servidores e Suporte em São Paulo</title>
+  <meta name="description" content="Venda e instalação de CFTV, infraestrutura de redes, Windows Server, virtualização Hyper-V/VMware, montagem de PCs gamer/sob medida, suporte remoto e presencial. Orçamento grátis em minutos.">
+  <meta name="keywords" content="cftv, instalação câmeras, redes wi-fi, windows server, hyper-v, vmware, suporte ti, montagem pc gamer, são paulo">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProTech Segurança & TI - CFTV e Redes Profissionais">
+  <meta property="og:description" content="CFTV profissional, infraestrutura de redes, servidores, virtualização e suporte completo. Atendemos toda Grande São Paulo.">
+  <meta property="og:image" content="https://seusite.pages.dev/banner.jpg"> <!-- Atualize para sua imagem no OG para melhor compartilhamento -->
+  <meta property="og:url" content="https://seusite.pages.dev">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="canonical" href="https://seusite.pages.dev">
+  <link rel="icon" href="https://seusite.pages.dev/banner.jpg?w=64" type="image/jpeg"> <!-- Ícone opcional baseado na imagem -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <a href="/" style="text-decoration: none; color: white;">
-            <h1>WarNat Tech</h1>
+
+<body class="font-sans text-gray-800 antialiased">
+  <!-- Navbar fixo -->
+  <nav class="bg-blue-900 text-white fixed top-0 w-full z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-wrap justify-between items-center">
+      <div class="text-2xl font-bold">ProTech <span class="text-orange-500">Segurança & TI</span></div>
+      <div class="flex gap-6 text-sm">
+        <a href="#servicos" class="hover:text-orange-400">Serviços</a>
+        <a href="#sobre" class="hover:text-orange-400">Sobre</a>
+        <a href="#depoimentos" class="hover:text-orange-400">Depoimentos</a>
+        <a href="#contato" class="hover:text-orange-400">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (atualizado com sua imagem como banner principal) -->
+  <section class="bg-blue-900 text-white pt-20 pb-16 text-center bg-cover bg-center" style="background-image: url('banner.jpg')">
+    <div class="bg-blue-900/80 py-16">
+      <div class="max-w-5xl mx-auto px-4">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Proteção Inteligente para Sua Casa ou Empresa</h1>
+        <p class="text-xl md:text-2xl mb-8">CFTV Profissional • Redes • Servidores • Suporte 24h</p>
+        <p class="text-3xl md:text-5xl font-bold text-orange-400 mb-8">Orçamento Grátis + Até 30% Off na Instalação*</p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+          <a href="https://wa.me/5511999999999?text=Olá! Quero um orçamento de CFTV/redes" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-10 rounded text-xl shadow-lg transform hover:scale-105 transition">
+            <i class="fab fa-whatsapp mr-2"></i> ORÇAMENTO PELO WHATSAPP
+          </a>
+          <a href="tel:+5511999999999" class="text-2xl font-bold text-yellow-300 hover:text-yellow-400">
+            <i class="fas fa-phone mr-2"></i> (11) 9 9999-9999
+          </a>
+        </div>
+        
+        <p class="text-sm">*Válido para contratos anuais ou instalação completa até 31/01/2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefícios rápidos -->
+  <section class="bg-gray-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      <div class="bg-white p-8 rounded-lg shadow">
+        <i class="fas fa-shield-alt text-5xl text-orange-500 mb-4"></i>
+        <h3 class="text-xl font-bold">Monitoramento 24h</h3>
+        <p>Suporte remoto ou presencial em até 2h na Grande SP</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow">
+        <i class="fas fa-video text-5xl text-orange-500 mb-4"></i>
+        <h3 class="text-xl font-bold">CFTV 4K/8MP</h3>
+        <p>Câmeras Hikvision/Dahua com visão noturna e app</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow">
+        <i class="fas fa-network-wired text-5xl text-orange-500 mb-4"></i>
+        <h3 class="text-xl font-bold">Redes Profissionais</h3>
+        <p>Ubiquiti, Mikrotik, Cisco - Wi-Fi 6 enterprise</p>
+      </div>
+      <div class="bg-white p-8 rounded-lg shadow">
+        <i class="fas fa-tools text-5xl text-orange-500 mb-4"></i>
+        <h3 class="text-xl font-bold">Montagem de PCs</h3>
+        <p>Gamer ou corporativo com o melhor custo x desempenho</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Serviços detalhados -->
+  <section id="servicos" class="py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">Nossos Serviços</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Venda + Instalação de CFTV</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Câmeras 4K/8MP Hikvision, Intelbras, Dahua</li>
+            <li>Instalação completa com cabeamento estruturado</li>
+            <li>DVR/NVR híbrido, acesso remoto via app</li>
+            <li>Projetos para residências, comércios e indústrias</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Infraestrutura de Redes</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Planejamento e implantação LAN/Wi-Fi enterprise</li>
+            <li>Configuração de roteadores, switches, firewalls</li>
+            <li>Ubiquiti UniFi, Mikrotik, TP-Link Omada</li>
+            <li>Redes mesh, VLANs, QoS, VPN site-to-site</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Servidores & Virtualização</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Instalação Windows Server 2019/2022</li>
+            <li>Active Directory, pastas compartilhadas, permissões</li>
+            <li>Hyper-V ou VMware ESXi</li>
+            <li>Rotinas de backup automatizado (Veeam, Synology)</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Suporte Remoto & Presencial</h3>
+          <ul class="list-inside space-y-2">
+            <li>Diagnóstico rápido via AnyDesk/TeamViewer</li>
+            <li>Manutenção preventiva e corretiva</li>
+            <li>Remoção de vírus, otimização, upgrade</li>
+            <li>Atendimento 24h em casos críticos</li>
+          </ul>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-lg">
+          <h3 class="text-2xl font-bold text-orange-600 mb-4">Montagem e Upgrade de PCs</h3>
+          <ul class="list-inside space-y-2">
+            <li>PCs gamer sob medida (melhor custo x desempenho)</li>
+            <li>Montagem corporativa (estações de trabalho)</li>
+            <li>Limpeza, troca de pasta térmica, SSD, RAM</li>
+            <li>Garantia de 1 ano na montagem</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <a href="https://wa.me/5511999999999?text=Quero orçamento completo dos serviços" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 px-12 rounded text-xl shadow-lg">
+          SOLICITAR ORÇAMENTO SEM COMPROMISSO
         </a>
-        <p>Segurança, Redes e TI de Alto Nível</p>
-        <nav>
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/cftv.html">CFTV</a></li>
-                <li><a href="/redes.html">Redes</a></li>
-                <li><a href="/servidores.html">Servidores</a></li>
-                <li><a href="/suporte.html">Suporte</a></li>
-                <li><a href="/montagem.html">Montagem de PCs</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+    </div>
+  </section>
 
-    <!-- HERO SECTION NOVA -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2>WarNat Tech</h2>
-            <p>Segurança Eletrônica, Redes e Suporte TI Profissional em BH</p>
-            <a href="https://wa.me/5531983525816?text=Olá! Vim pelo site da WarNat Tech, gostaria de um orçamento." class="btn whatsapp-hero">Fale no WhatsApp</a>
+  <!-- Depoimentos (igual Verisure) -->
+  <section id="depoimentos" class="bg-gray-100 py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-4xl font-bold text-center mb-12">O que nossos clientes dizem</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Instalaram 16 câmeras na minha loja em 1 dia. Imagem perfeita e acesso pelo celular. Recomendo!"</p>
+          <p class="text-right font-semibold">- Marcelo S., Loja de Conveniência</p>
         </div>
-    </section>
-
-    <main>
-        <h2 style="text-align: center; margin: 3rem 0 4rem 0;">Nossos Serviços</h2>
-
-        <div class="card-container">
-            <div class="card">
-                <h3>CFTV – Segurança Eletrônica</h3>
-                <p>Venda e instalação de câmeras, DVR/NVR, manutenção e monitoramento.</p>
-                <a href="/cftv.html" class="btn">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <h3>Redes e Infraestrutura</h3>
-                <p>Projetos LAN/Wi-Fi, cabeamento estruturado, roteadores, switches.</p>
-                <a href="/redes.html" class="btn">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <h3>Servidores Windows</h3>
-                <p>Instalação, Active Directory, Hyper-V, backups e VMware.</p>
-                <a href="/servidores.html" class="btn">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <h3>Suporte Técnico</h3>
-                <p>Remoto e presencial, diagnóstico e solução de problemas.</p>
-                <a href="/suporte.html" class="btn">Saiba Mais</a>
-            </div>
-            <div class="card">
-                <h3>Montagem de PCs</h3>
-                <p>Montagem personalizada, upgrades e manutenção completa.</p>
-                <a href="/montagem.html" class="btn">Saiba Mais</a>
-            </div>
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Resolveram o problema de internet lenta na empresa inteira. Agora temos Wi-Fi rápido em todos os andares."</p>
+          <p class="text-right font-semibold">- Renata C., Escritório de Advocacia</p>
         </div>
-    </main>
+        <div class="bg-white p-8 rounded shadow">
+          <p class="italic mb-4">"Montaram meu PC gamer Ryzen 7 + RTX 4070 por preço imbatível. Está voando!"</p>
+          <p class="text-right font-semibold">- Lucas M., Gamer</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 WarNat Tech - Todos os direitos reservados</p>
-        <p>Contato WhatsApp: <a href="https://wa.me/5531983525816?text=Olá! Vim pelo site da WarNat Tech, gostaria de um orçamento.">(31) 98352-5816</a></p>
-    </footer>
+  <!-- CTA Final -->
+  <section id="contato" class="bg-blue-900 text-white py-20 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-4xl md:text-5xl font-bold mb-8">Pronto para proteger e modernizar seu negócio ou residência?</h2>
+      <p class="text-2xl mb-8">Orçamento grátis em até 10 minutos</p>
+      <div class="flex flex-col sm:flex-row gap-6 justify-center">
+        <a href="https://wa.me/5511999999999?text=Olá ProTech! Quero proteger minha casa/empresa" class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-12 rounded text-2xl shadow-lg">
+          <i class="fab fa-whatsapp mr-3"></i> FALAR AGORA NO WHATSAPP
+        </a>
+        <a href="tel:+5511999999999" class="text-3xl font-bold border-4 border-white rounded px-10 py-5 hover:bg-white hover:text-blue-900 transition">
+          <i class="fas fa-phone mr-3"></i> (11) 9 9999-9999
+        </a>
+      </div>
+      <p class="mt-8 text-lg">Atendemos Grande São Paulo e região • Suporte 24h</p>
+    </div>
+  </section>
 
-    <a href="https://wa.me/5531983525816?text=Olá! Vim pelo site da WarNat Tech, gostaria de um orçamento." class="whatsapp-fixo" target="_blank">💬</a>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-2xl font-bold mb-4">ProTech Segurança & TI</p>
+      <p>CNPJ 99.999.999/0001-99 • São Paulo - SP</p>
+      <p class="mt-4">(11) 9 9999-9999 • contato@protechti.com.br</p>
+      <p class="mt-8 text-sm">© 2025 ProTech Segurança & TI. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 </body>
 </html>
